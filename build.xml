@@ -1,0 +1,19 @@
+<project name="w4mcghvm" default="all">
+
+	<!-- ALL -->
+	<target name="all"/>
+
+	<!-- BUILD DOCKER -->
+	<target name="build.docker">
+		<exec executable="docker">
+			<arg value="build"/>
+			<arg value="-t"/>
+			<arg value="galaxy-w4m-cgh"/>
+			<arg value="."/>
+		</exec>
+	</target>
+
+	<!-- RUN DOCKER -->
+	<target name="run.docker" depends="build.docker"/>
+
+</project>
