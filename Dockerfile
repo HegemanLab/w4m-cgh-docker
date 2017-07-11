@@ -4,7 +4,7 @@
 
 #FROM quay.io/bgruening/galaxy:jmc_conda
 #FROM quay.io/bgruening/galaxy:release_17.01
-FROM workflow4metabolomics/galaxy-workflow4metabolomics
+FROM workflow4metabolomics/galaxy-workflow4metabolomics:2.5.1.3
 
 MAINTAINER Arthur C. Eschenlauer, esch0041@umn.edu
 
