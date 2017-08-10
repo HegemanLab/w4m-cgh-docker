@@ -1,7 +1,13 @@
-# This is just a fragment to be appended to tool_list.yaml, which is documented here:
-#    https://github.com/galaxyproject/ansible-galaxy-tools/blob/master/files/tool_list.yaml.sample
 
-#filter
+####################################################################################################
+# These entries are a fragment to be appended to W4M tool_list.yaml, which is documented here:     #
+#    https://github.com/galaxyproject/ansible-galaxy-tools/blob/master/files/tool_list.yaml.sample #
+####################################################################################################
+
+###################################
+# filter - Common / Filter and Sort
+###################################
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.1 - 191a720488ce
 - name: w4mclassfilter
   owner: eschen42
   tool_panel_section_id: 'filter'
@@ -10,4 +16,88 @@
   install_resolver_dependencies: True
   revisions:
   - '191a720488ce' # v0.98.1
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.2 - 499c7ecfa834
+- name: w4mclassfilter
+  owner: eschen42
+  tool_panel_section_id: 'filter'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '499c7ecfa834' # v0.98.2
+
+############################################
+# group - Common / Join, Subtract, and Group
+############################################
+# toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/1.0.0 - 3708ff0198b7
+- name: query_tabular
+  owner: iuc
+  tool_panel_section_id: 'group'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '3708ff0198b7' # v	1.0.0
+# toolshed.g2.bx.psu.edu/repos/jjohnson/query_tabular/query_tabular/3.1.0 - c6e6e224509c - deprecated
+- name: query_tabular
+  owner: jjohnson
+  tool_panel_section_id: 'group'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - 'c6e6e224509c' # v3.1.0
+
+# testtoolshed.g2.bx.psu.edu/repos/moheydarian/melt/melt/0.0.2 - 3621af0e3ef7
+- name: melt
+  owner: moheydarian
+  tool_panel_section_id: 'group'
+  tool_shed_url: https://testtoolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '3621af0e3ef7' # v0.0.2
+
+###################################
+# text - Common / Text Manipulation
+###################################
+- name: sed_wrapper
+  owner: bjoern-gruening
+  tool_panel_section_id: 'textutil'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '12ac67b5c81d' # v0.0.1
+- name: text_processing
+  owner: bjoern-gruening
+  tool_panel_section_id: 'textutil'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '01ca80da2266' # v1.1.[01]
+
+
+#############################
+# stats - Common / Statistics
+#############################
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mkmeans/w4mkmeans/0.98.3 - 02cafb660b72
+- name: w4mkmeans
+  owner: eschen42
+  tool_panel_section_id: 'stats'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '02cafb660b72' # v0.98.3
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mkmeans/w4mkmeans/0.98.1 - 6ccbe18131a6
+- name: w4mkmeans
+  owner: eschen42
+  tool_panel_section_id: 'stats'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '6ccbe18131a6' # v0.98.1
 
