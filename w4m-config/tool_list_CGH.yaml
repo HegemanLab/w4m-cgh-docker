@@ -70,7 +70,7 @@
   revisions:
   - '12ac67b5c81d' # v0.0.1
 - name: text_processing
-  owner: bjoern-gruening
+  owner: bgruening
   tool_panel_section_id: 'textutil'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   install_tool_dependencies: True
@@ -100,4 +100,17 @@
   install_resolver_dependencies: True
   revisions:
   - '6ccbe18131a6' # v0.98.1
+
+#############################
+# LCMS-quality_control
+#############################
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mkmeans/w4mkmeans/0.98.1 - 6ccbe18131a6
+- name: w4mclstrpeakpics
+  owner: eschen42
+  tool_panel_section_id: 'LCMS-quality_control'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - 'f1f384d9a96d' # v0.98.1
 
