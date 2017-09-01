@@ -11,12 +11,16 @@ MAINTAINER Arthur C. Eschenlauer, esch0041@umn.edu
 
 ENV GALAXY_CONFIG_BRAND=W4M-3.0.x-CGH
 
-# # add rsync package
-# RUN apt-get update && apt-get install -y --no-install-recommends rsync
-
 # Install Tools
 ADD w4m-config/tool_list_CGH.yaml $GALAXY_ROOT/tools_CGH.yaml
 RUN cat $GALAXY_ROOT/tools_CGH.yaml >> $GALAXY_ROOT/tools.yaml
 RUN install-tools $GALAXY_ROOT/tools.yaml
+
+# add s3cmd
+RUN cd /tmp && \
+  wget https://downloads.sourceforge.net/projects/s3tools/s3cmd/2.0.0/s3cmd-2.0.0.tar.gz && \
+  tar xzf s3cmd-2.0.0.tar.gz && \
+  cd s3cmd-2.0.0 && \
+  python setup.py install
 
 RUN sed -i 's/# object_store_config_file =/object_store_config_file =/' /etc/galaxy/galaxy.ini
