@@ -11,8 +11,8 @@ MAINTAINER Arthur C. Eschenlauer, esch0041@umn.edu
 
 ENV GALAXY_CONFIG_BRAND=W4M-3.0.x-CGH
 
-# add rsync package
-RUN apt-get update && apt-get upgrade -y && apt-get install -y --no-install-recommends rsync
+# # add rsync package
+# RUN apt-get update && apt-get install -y --no-install-recommends rsync
 
 # Install Tools
 ADD w4m-config/tool_list_CGH.yaml $GALAXY_ROOT/tools_CGH.yaml
