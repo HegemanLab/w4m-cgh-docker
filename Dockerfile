@@ -18,7 +18,7 @@ RUN install-tools $GALAXY_ROOT/tools.yaml
 
 # add s3cmd
 RUN cd /tmp && \
-  wget https://downloads.sourceforge.net/projects/s3tools/s3cmd/2.0.0/s3cmd-2.0.0.tar.gz && \
+  wget https://github.com/s3tools/s3cmd/releases/download/v2.0.0/s3cmd-2.0.0.tar.gz && \
   tar xzf s3cmd-2.0.0.tar.gz && \
   cd s3cmd-2.0.0 && \
   python setup.py install
