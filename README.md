@@ -1,8 +1,25 @@
-# Galaxy `Pisces`(W4M 3.0) 
+# Galaxy `Pisces` (W4M 3.0) 
 
 The `Pisces` Galaxy (W4M 3.0) was custom-built with the code here and the command
 
 ```docker build -t galaxy-w4m-3.0.x-cgh .```
+
+Note well that the Dockerfile has been changed to remove a comment character from galaxy.ini so that the following line is active.  
+
+```
+object_store_config_file = config/object_store_config.xml
+```
+
+Theoretically, I should be able to set this via the environment variable
+```
+GALAXY_CONFIG_OBJECT_STORE_CONFIG_FILE
+```
+but I have been getting inconsistent results and made this change to avoid "one more moving part".
+
+For further (albeit limited) information on configuring the object store, see the following:
+
+* https://biostar.usegalaxy.org/p/18477/#18556
+* https://github.com/galaxyproject/galaxy/blob/dev/config/object_store_conf.xml.sample
 
 # Galaxy `Carina` and `Workshop` (W4M 3.0) 
 
