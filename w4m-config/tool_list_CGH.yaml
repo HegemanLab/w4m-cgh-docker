@@ -25,6 +25,15 @@
   install_resolver_dependencies: True
   revisions:
   - '499c7ecfa834' # v0.98.2
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.2 - 2cdf7d5982c8
+- name: w4mclassfilter
+  owner: eschen42
+  tool_panel_section_id: 'filter'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '2cdf7d5982c8' # v0.98.3
 
 ############################################
 # group - Common / Join, Subtract, and Group

@@ -16,7 +16,7 @@ ADD w4m-config/tool_list_CGH.yaml $GALAXY_ROOT/tools_CGH.yaml
 RUN cat $GALAXY_ROOT/tools_CGH.yaml >> $GALAXY_ROOT/tools.yaml
 RUN install-tools $GALAXY_ROOT/tools.yaml
 
-# add s3cmd
+# Add s3cmd
 RUN cd /tmp && \
   wget https://github.com/s3tools/s3cmd/releases/download/v2.0.0/s3cmd-2.0.0.tar.gz && \
   tar xzf s3cmd-2.0.0.tar.gz && \
@@ -24,3 +24,6 @@ RUN cd /tmp && \
   python setup.py install
 
 RUN sed -i 's/# object_store_config_file =/object_store_config_file =/' /etc/galaxy/galaxy.ini
+
+# Use CVS to support pg_dumpall efficiently
+RUN apt-get update && apt-get install -y cvs
