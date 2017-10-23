@@ -7,24 +7,6 @@
 ###################################
 # filter - Common / Filter and Sort
 ###################################
-# toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.1 - 191a720488ce
-- name: w4mclassfilter
-  owner: eschen42
-  tool_panel_section_id: 'filter'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: True
-  install_resolver_dependencies: True
-  revisions:
-  - '191a720488ce' # v0.98.1
-# toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.2 - 499c7ecfa834
-- name: w4mclassfilter
-  owner: eschen42
-  tool_panel_section_id: 'filter'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: True
-  install_resolver_dependencies: True
-  revisions:
-  - '499c7ecfa834' # v0.98.2
 # toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.2 - 2cdf7d5982c8
 - name: w4mclassfilter
   owner: eschen42
@@ -100,15 +82,17 @@
   install_resolver_dependencies: True
   revisions:
   - '02cafb660b72' # v0.98.3
-# toolshed.g2.bx.psu.edu/repos/eschen42/w4mkmeans/w4mkmeans/0.98.1 - 6ccbe18131a6
-- name: w4mkmeans
+
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mcorcov/w4mcorcov/0.98.3 - 0c2ad44b6c9c
+- name: w4mcorcov
   owner: eschen42
   tool_panel_section_id: 'stats'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   install_tool_dependencies: True
   install_resolver_dependencies: True
   revisions:
-  - '6ccbe18131a6' # v0.98.1
+  - '0c2ad44b6c9c' # v0.98.3
+
 
 #############################
 # LCMS-quality_control
