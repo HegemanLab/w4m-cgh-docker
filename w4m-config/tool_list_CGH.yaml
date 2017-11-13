@@ -4,10 +4,58 @@
 #    https://github.com/galaxyproject/ansible-galaxy-tools/blob/master/files/tool_list.yaml.sample #
 ####################################################################################################
 
+# ==> ./2cdf7d5982c8/w4mclassfilter/w4mclassfilter.xml <==
+# <tool id="w4mclassfilter" name="Sample_Subset" version="0.98.3">
+#   <description>Filter W4M data by sample class</description>
+# 
+#   <requirements>
+#     <requirement type="package" version="3.3.2">r-base</requirement>
+#     <requirement type="package" version="1.1_4">r-batch</requirement>
+#     <requirement type="package" version="0.98.3">w4mclassfilter</requirement>
+#   </requirements>
+# 
+#   <stdio>
+# 
+# ==> ./499c7ecfa834/w4mclassfilter/w4mclassfilter.xml <==
+# <tool id="w4mclassfilter" name="Sample_Subset" version="0.98.2">
+#   <description>Filter W4M data by sample class</description>
+# 
+#   <requirements>
+#     <requirement type="package" version="3.3.1">r-base</requirement>
+#     <requirement type="package" version="1.1_4">r-batch</requirement>
+#     <requirement type="package" version="0.98.2">w4mclassfilter</requirement>
+#   </requirements>
+# 
+#   <stdio>
+# 
+# ==> ./191a720488ce/w4mclassfilter/w4mclassfilter.xml <==
+# <tool id="w4mclassfilter" name="Sample_Subset" version="0.98.1">
+#   <description>Filter W4M data by sample class</description>
+# 
+#   <requirements>
+#     <requirement type="package" version="3.3.1">r-base</requirement>
+#     <requirement type="package" version="1.1_4">r-batch</requirement>
+#     <requirement type="package" version="0.98.1">w4mclassfilter</requirement>
+#   </requirements>
+# 
+#   <stdio>
+
 ###################################
 # filter - Common / Filter and Sort
 ###################################
-# toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.2 - 2cdf7d5982c8
+# w4mclassfilter 0.98.1 is in contrib for stock w4m.  Here install 0.98.2 and 0.98.3
+
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.2 - 499c7ecfa834
+- name: w4mclassfilter
+  owner: eschen42
+  tool_panel_section_id: 'filter'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '499c7ecfa834' # v0.98.2
+
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.3 - 2cdf7d5982c8
 - name: w4mclassfilter
   owner: eschen42
   tool_panel_section_id: 'filter'
@@ -107,3 +155,15 @@
   revisions:
   - 'f1f384d9a96d' # v0.98.1
 
+############################################
+# group - Common / Join, Subtract, and Group
+############################################
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mjoinpn/w4mjoinpn/0.98.1 - 948bac693947
+- name: w4mjoinpn
+  owner: eschen42
+  tool_panel_section_id: 'group'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '948bac693947' # v0.98.1
