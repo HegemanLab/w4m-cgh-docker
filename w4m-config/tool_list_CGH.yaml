@@ -86,6 +86,35 @@
   install_resolver_dependencies: True
   revisions:
   - 'c6e6e224509c' # v3.1.0
+  
+# toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/2.0.0 - 1ea4e668bf73
+- name: query_tabular
+  owner: iuc
+  tool_panel_section_id: 'group'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '1ea4e668bf73' # v	2.0.0
+# toolshed.g2.bx.psu.edu/repos/iuc/sqlite_to_tabular/sqlite_to_tabular/2.0.0 - 0b50524a01e6
+- name: sqlite_to_tabular
+  owner: iuc
+  tool_panel_section_id: 'group'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '0b50524a01e6' # v	2.0.0
+# toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/2.0.0 - 98b40ecad32b
+- name: filter_tabular
+  owner: iuc
+  tool_panel_section_id: 'group'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '98b40ecad32b' # v	2.0.0
+
 
 # testtoolshed.g2.bx.psu.edu/repos/moheydarian/melt/melt/0.0.2 - 3621af0e3ef7
 - name: melt
@@ -141,6 +170,15 @@
   revisions:
   - '0c2ad44b6c9c' # v0.98.3
 
+# toolshed.g2.bx.psu.edu/repos/lecorguille/anova/abims_anova/1.1.4 - 4f06e1796334
+- name: anova
+  owner: lecorguille
+  tool_panel_section_id: 'stats'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '4f06e1796334' # v	1.1.4
 
 #############################
 # LCMS-quality_control
