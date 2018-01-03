@@ -96,15 +96,17 @@
   install_resolver_dependencies: True
   revisions:
   - '1ea4e668bf73' # v	2.0.0
-# toolshed.g2.bx.psu.edu/repos/iuc/sqlite_to_tabular/sqlite_to_tabular/2.0.0 - 0b50524a01e6
-- name: sqlite_to_tabular
-  owner: iuc
-  tool_panel_section_id: 'group'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: True
-  install_resolver_dependencies: True
-  revisions:
-  - '0b50524a01e6' # v	2.0.0
+
+## toolshed.g2.bx.psu.edu/repos/iuc/sqlite_to_tabular/sqlite_to_tabular/2.0.0 - 0b50524a01e6
+#- name: sqlite_to_tabular
+#  owner: iuc
+#  tool_panel_section_id: 'group'
+#  tool_shed_url: https://toolshed.g2.bx.psu.edu
+#  install_tool_dependencies: True
+#  install_resolver_dependencies: True
+#  revisions:
+#  - '0b50524a01e6' # v	2.0.0
+
 # toolshed.g2.bx.psu.edu/repos/iuc/filter_tabular/filter_tabular/2.0.0 - 98b40ecad32b
 - name: filter_tabular
   owner: iuc
