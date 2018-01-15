@@ -8,10 +8,20 @@
 # filter - Common / Filter and Sort
 ###################################
 
-# toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.1 - 191a720488ce
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.6 - 38ccf6722d54
 - name: w4mclassfilter
   owner: eschen42
   tool_panel_section_id: 'filter'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '38ccf6722d54' # v0.98.6
+
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.1 - 191a720488ce
+- name: w4mclassfilter
+  owner: eschen42
+  tool_panel_section_id: 'Old-Tools'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   install_tool_dependencies: True
   install_resolver_dependencies: True
@@ -21,7 +31,7 @@
 # toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.2 - 499c7ecfa834
 - name: w4mclassfilter
   owner: eschen42
-  tool_panel_section_id: 'filter'
+  tool_panel_section_id: 'Old-Tools'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   install_tool_dependencies: True
   install_resolver_dependencies: True
@@ -45,7 +55,7 @@
 # toolshed.g2.bx.psu.edu/repos/jjohnson/query_tabular/query_tabular/3.1.0 - c6e6e224509c - deprecated
 - name: query_tabular
   owner: jjohnson
-  tool_panel_section_id: 'group'
+  tool_panel_section_id: 'Old-Tools'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   install_tool_dependencies: True
   install_resolver_dependencies: True
@@ -123,7 +133,7 @@
   revisions:
     - 'b2b02fb81a0a' # v2.3.10
 
-# testtoolshed.g2.bx.psu.edu/repos/eschen42/w4mcorcov/w4mcorcov/0.98.1 - 50a07adddfbd
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mcorcov/w4mcorcov/0.98.6 - 5aaab36bc523
 - name: w4mcorcov
   owner: eschen42
   tool_panel_section_id: 'LCMS-statistical_analysis'
@@ -132,6 +142,16 @@
     - 'GCMS-statistical_analysis'
     - 'NMR-statistical_analysis'
     - 'stats'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: False
+  install_resolver_dependencies: True
+  revisions:
+    - '5aaab36bc523' # v0.98.6
+
+# testtoolshed.g2.bx.psu.edu/repos/eschen42/w4mcorcov/w4mcorcov/0.98.1 - 50a07adddfbd
+- name: w4mcorcov
+  owner: eschen42
+  tool_panel_section_id: 'Old-Tools'
   tool_shed_url: https://testtoolshed.g2.bx.psu.edu
   install_tool_dependencies: False
   install_resolver_dependencies: True
