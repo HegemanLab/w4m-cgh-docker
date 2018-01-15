@@ -65,7 +65,7 @@
   revisions:
   - '2cdf7d5982c8' # v0.98.3
 
-# toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.3 - 38ccf6722d54
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.6 - 38ccf6722d54
 - name: w4mclassfilter
   owner: eschen42
   tool_panel_section_id: 'filters'
