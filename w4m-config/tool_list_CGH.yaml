@@ -43,12 +43,12 @@
 ###################################
 # filter - Common / Filter and Sort
 ###################################
-# w4mclassfilter 0.98.1 is in contrib for stock w4m.  Here install 0.98.2 and 0.98.3
+# w4mclassfilter 0.98.1 is in contrib for stock w4m.  Here install 0.98.2 and 0.98.6
 
 # toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.2 - 499c7ecfa834
 - name: w4mclassfilter
   owner: eschen42
-  tool_panel_section_id: 'filter'
+  tool_panel_section_id: 'Old-Tools'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   install_tool_dependencies: True
   install_resolver_dependencies: True
@@ -58,12 +58,22 @@
 # toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.3 - 2cdf7d5982c8
 - name: w4mclassfilter
   owner: eschen42
-  tool_panel_section_id: 'filter'
+  tool_panel_section_id: 'Old-Tools'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   install_tool_dependencies: True
   install_resolver_dependencies: True
   revisions:
   - '2cdf7d5982c8' # v0.98.3
+
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.3 - 38ccf6722d54
+- name: w4mclassfilter
+  owner: eschen42
+  tool_panel_section_id: 'filters'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '38ccf6722d54' # v0.98.6
 
 ############################################
 # group - Common / Join, Subtract, and Group
@@ -162,10 +172,20 @@
   revisions:
   - '02cafb660b72' # v0.98.3
 
-# toolshed.g2.bx.psu.edu/repos/eschen42/w4mcorcov/w4mcorcov/0.98.3 - 0c2ad44b6c9c
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mcorcov/w4mcorcov/0.98.6 - 5aaab36bc523
 - name: w4mcorcov
   owner: eschen42
   tool_panel_section_id: 'stats'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '5aaab36bc523' # v0.98.6
+
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mcorcov/w4mcorcov/0.98.3 - 0c2ad44b6c9c
+- name: w4mcorcov
+  owner: eschen42
+  tool_panel_section_id: 'Old-Tools'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   install_tool_dependencies: True
   install_resolver_dependencies: True
