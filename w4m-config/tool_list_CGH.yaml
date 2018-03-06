@@ -43,6 +43,9 @@
 ###################################
 # filter - Common / Filter and Sort
 ###################################
+
+# w4mclassfilter ---
+
 # w4mclassfilter 0.98.1 is in contrib for stock w4m.  Here install 0.98.2 and 0.98.6
 
 # toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.2 - 499c7ecfa834
@@ -68,12 +71,24 @@
 # toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.6 - 38ccf6722d54
 - name: w4mclassfilter
   owner: eschen42
-  tool_panel_section_id: 'filters'
+  tool_panel_section_id: 'Old-Tools'
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   install_tool_dependencies: True
   install_resolver_dependencies: True
   revisions:
   - '38ccf6722d54' # v0.98.6
+
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mclassfilter/w4mclassfilter/0.98.8 - d5cf23369d12
+- name: w4mclassfilter
+  owner: eschen42
+  tool_panel_section_id: 'filters'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - 'd5cf23369d12' # v0.98.8
+
+# w4mclassfilter ...
 
 ############################################
 # group - Common / Join, Subtract, and Group
@@ -162,7 +177,30 @@
 #############################
 # stats - Common / Statistics
 #############################
+
+# w4mkmeans ---
+
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mkmeans/w4mkmeans/0.98.1 - 6ccbe18131a6
+- name: w4mclstrpeakpics
+  owner: eschen42
+  tool_panel_section_id: 'Old-Tools'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - 'f1f384d9a96d' # v0.98.1
+
 # toolshed.g2.bx.psu.edu/repos/eschen42/w4mkmeans/w4mkmeans/0.98.3 - 02cafb660b72
+- name: w4mkmeans
+  owner: eschen42
+  tool_panel_section_id: 'Old-Tools'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '02cafb660b72' # v0.98.3
+
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mkmeans/w4mkmeans/0.98.4 - c415b7dc6f37
 - name: w4mkmeans
   owner: eschen42
   tool_panel_section_id: 'stats'
@@ -170,17 +208,11 @@
   install_tool_dependencies: True
   install_resolver_dependencies: True
   revisions:
-  - '02cafb660b72' # v0.98.3
+  - 'c415b7dc6f37' # v0.98.4
 
-# toolshed.g2.bx.psu.edu/repos/eschen42/w4mcorcov/w4mcorcov/0.98.6 - 5aaab36bc523
-- name: w4mcorcov
-  owner: eschen42
-  tool_panel_section_id: 'stats'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: True
-  install_resolver_dependencies: True
-  revisions:
-  - '5aaab36bc523' # v0.98.6
+# w4mkmeans ...
+
+# w4mcorcov ---
 
 # toolshed.g2.bx.psu.edu/repos/eschen42/w4mcorcov/w4mcorcov/0.98.3 - 0c2ad44b6c9c
 - name: w4mcorcov
@@ -192,6 +224,26 @@
   revisions:
   - '0c2ad44b6c9c' # v0.98.3
 
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mcorcov/w4mcorcov/0.98.6 - 5aaab36bc523
+- name: w4mcorcov
+  owner: eschen42
+  tool_panel_section_id: 'Old-Tools'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '5aaab36bc523' # v0.98.6
+
+# toolshed.g2.bx.psu.edu/repos/eschen42/w4mcorcov/w4mcorcov/0.98.7 - 8bba31f628da
+- name: w4mcorcov
+  owner: eschen42
+  tool_panel_section_id: 'stats'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  install_tool_dependencies: True
+  install_resolver_dependencies: True
+  revisions:
+  - '8bba31f628da' # v0.98.7
+
 # toolshed.g2.bx.psu.edu/repos/lecorguille/anova/abims_anova/1.1.4 - 4f06e1796334
 - name: anova
   owner: lecorguille
@@ -202,18 +254,7 @@
   revisions:
   - '4f06e1796334' # v	1.1.4
 
-#############################
-# LCMS-quality_control
-#############################
-# toolshed.g2.bx.psu.edu/repos/eschen42/w4mkmeans/w4mkmeans/0.98.1 - 6ccbe18131a6
-- name: w4mclstrpeakpics
-  owner: eschen42
-  tool_panel_section_id: 'LCMS-quality_control'
-  tool_shed_url: https://toolshed.g2.bx.psu.edu
-  install_tool_dependencies: True
-  install_resolver_dependencies: True
-  revisions:
-  - 'f1f384d9a96d' # v0.98.1
+# w4mcorcov ...
 
 ############################################
 # group - Common / Join, Subtract, and Group
