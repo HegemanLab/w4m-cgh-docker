@@ -1,20 +1,23 @@
-# 'Pisces' Galaxy - W4M 3.0.x
+# 'Leo' Galaxy - W4M 3.2
 #
-# based on W4m VERSION  3.0.x
-#   for which DockerFile and build transcript, with tag 'd79e598c4975', are at:
-#     https://hub.docker.com/r/workflow4metabolomics/galaxy-workflow4metabolomics/builds/bgvhvblrfeu3m8fmikqruvf/
+# based on W4m VERSION  3.2, but neither Dockerfile nor build transcript are available
+# #  for which DockerFile and build transcript, with tag 'deadbeefdead', are at:
+# #    https://hub.docker.com/r/workflow4metabolomics/galaxy-workflow4metabolomics/builds/deadbeefdeadbeefdeadbeef/
 
-# from W4m 3.0.x (see above)
-FROM workflow4metabolomics/galaxy-workflow4metabolomics@sha256:a6ff8ecd87a90d7717e58edff355e504355085ed1f8195f722169f2fcb229360
+# from W4m 3.2 (see above)
+#FROM workflow4metabolomics/galaxy-workflow4metabolomics@sha256:deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef
+FROM galaxy-workflow4metabolomics:2018dec05
 
 MAINTAINER Arthur C. Eschenlauer, esch0041@umn.edu
 
-ENV GALAXY_CONFIG_BRAND=W4M-3.0.x-CGH
+ENV GALAXY_CONFIG_BRAND=W4M-3.2-CGH
 
 # Install Tools
 ADD w4m-config/tool_list_CGH.yaml $GALAXY_ROOT/tools_CGH.yaml
 RUN cat $GALAXY_ROOT/tools_CGH.yaml >> $GALAXY_ROOT/tools.yaml
 RUN install-tools $GALAXY_ROOT/tools.yaml
+
+RUN pip install --upgrade setuptools
 
 # add s3cmd
 RUN cd /tmp && \
@@ -24,3 +27,7 @@ RUN cd /tmp && \
   python setup.py install
 
 RUN sed -i 's/# object_store_config_file =/object_store_config_file =/' /etc/galaxy/galaxy.ini
+RUN sed -i 's/#[ ]*tool_config_file =/tool_config_file =/' /etc/galaxy/galaxy.ini
+
+# Use CVS to support pg_dumpall efficiently
+RUN apt-get update && apt-get install -y cvs
