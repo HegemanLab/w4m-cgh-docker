@@ -6,7 +6,7 @@
 
 # from W4m 3.2 (see above)
 #FROM workflow4metabolomics/galaxy-workflow4metabolomics@sha256:deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef
-FROM galaxy-workflow4metabolomics:2018dec05
+FROM galaxy-workflow4metabolomics:2018dec06
 
 MAINTAINER Arthur C. Eschenlauer, esch0041@umn.edu
 
