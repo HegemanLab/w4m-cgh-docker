@@ -9,7 +9,7 @@
 			<arg value="build"/>
 			<arg value="--no-cache"/>
 			<arg value="-t"/>
-			<arg value="galaxy-w4m-3.2.1-cgh"/>
+			<arg value="galaxy-w4m-3.3-cgh-gould"/>
 			<arg value="."/>
 		</exec>
 	</target>

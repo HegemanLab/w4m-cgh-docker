@@ -16,6 +16,7 @@
   install_resolver_dependencies: True
   revisions:
   - '9f5c0e23c205' # v0.98.11
+  - 'c18040b6e8b9' # v0.98.14
 
 ############################################
 # group - Common / Join, Subtract, and Group
