@@ -1,4 +1,16 @@
-# Galaxy `Leo` (W4M 3.2) 
+# Galaxy `Gould` (W4M 3.3)
+
+The `Gould` Galaxy (W4M 3.3) was custom-built with the code here and the command
+
+```docker build -t galaxy-w4m-3.3-cgh-gould .```
+
+Note well that the Dockerfile has been reverted to restore a comment character from galaxy.ini so that the following line is inactive.
+```
+#object_store_config_file = config/object_store_config.xml
+```
+
+
+# Galaxy `Leo` (W4M 3.2)
 
 The `Leo` Galaxy (W4M 3.2) was custom-built with the Leo branch of the code here and the command
 
@@ -7,13 +19,13 @@ The `Leo` Galaxy (W4M 3.2) was custom-built with the Leo branch of the code here
 However, because (at the time that I built it) there was no Docker image available, I had to build the FROM image from https://github.com/workflow4metabolomics/w4m-docker
 
 
-# Galaxy `Pisces` (W4M 3.0) 
- 
+# Galaxy `Pisces` (W4M 3.0)
+
 The `Pisces` Galaxy (W4M 3.0) was custom-built with the code here and the command
- 
+
 ```docker build -t galaxy-w4m-3.0.x-cgh .```
 
-Note well that the Dockerfile has been changed to remove a comment character from galaxy.ini so that the following line is active.  
+Note well that the Dockerfile has been changed to remove a comment character from galaxy.ini so that the following line is active.
 
 ```
 object_store_config_file = config/object_store_config.xml
@@ -31,7 +43,7 @@ For further (albeit limited) information on configuring the object store, see th
 * https://github.com/galaxyproject/galaxy/blob/dev/config/object_store_conf.xml.sample
 
 
-# Galaxy `Carina` and `Workshop` (W4M 3.0) 
+# Galaxy `Carina` and `Workshop` (W4M 3.0)
 
 The `Carina` and `Workshop` Galaxies (W4M 3.0) were not custom-built; rather, they were stock-installs of W4M 3.0, specifically:
 ```bash

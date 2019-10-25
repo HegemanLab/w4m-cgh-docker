@@ -25,8 +25,9 @@ RUN cd /tmp && \
   cd s3cmd-2.0.0 && \
   python setup.py install
 
-RUN sed -i 's/# object_store_config_file =/object_store_config_file =/' /etc/galaxy/galaxy.ini
-RUN sed -i 's/#[ ]*tool_config_file =/tool_config_file =/' /etc/galaxy/galaxy.ini
+#RUN sed -i 's/# object_store_config_file =/object_store_config_file =/' /etc/galaxy/galaxy.ini
+#RUN sed -i 's/#[ ]*tool_config_file =/tool_config_file =/' /etc/galaxy/galaxy.ini
+RUN sed -i 's/#[ ]*#tool_config_file: /tool_config_file: /' /etc/galaxy/galaxy.yml
 
 # Use CVS to support pg_dumpall efficiently
 RUN apt-get update && apt-get install -y cvs
