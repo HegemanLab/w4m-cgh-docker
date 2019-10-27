@@ -20,9 +20,10 @@ RUN pip install --upgrade setuptools
 
 # add s3cmd
 RUN cd /tmp && \
-  wget https://github.com/s3tools/s3cmd/releases/download/v2.0.0/s3cmd-2.0.0.tar.gz && \
-  tar xzf s3cmd-2.0.0.tar.gz && \
-  cd s3cmd-2.0.0 && \
+  wget https://github.com/s3tools/s3cmd/releases/download/v2.0.2/s3cmd-2.0.2.tar.gz && \
+  tar xzf s3cmd-2.0.2.tar.gz && \
+  rm s3cmd-2.0.2.tar.gz && \
+  cd s3cmd-2.0.2 && \
   python setup.py install
 
 #RUN sed -i 's/# object_store_config_file =/object_store_config_file =/' /etc/galaxy/galaxy.ini
@@ -30,4 +31,5 @@ RUN cd /tmp && \
 RUN sed -i 's/#[ ]*#tool_config_file: /tool_config_file: /' /etc/galaxy/galaxy.yml
 
 # Use CVS to support pg_dumpall efficiently
-RUN apt-get update && apt-get install -y cvs
+RUN apt-get update -y && apt-get upgrade -y && apt-get install -y cvs && apt-get clean && apt-get purge -y && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN chown -R galaxy:galaxy /home/galaxy
